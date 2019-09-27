@@ -1242,7 +1242,7 @@ if ( ! class_exists( 'Exopite_Simple_Options_Framework' ) ) :
 
 					if ( isset( $value['type'] ) ) {
 
-						if ( ! in_array( $value['type'], $fields ) && ! empty( $value['type'] ) ) {
+						if ( ! in_array( $value['type'], $fields ) && ! empty( $value['type'] ) && ! empty( $value['id'] ) ) {
 
 							$fields[ $value['type'] ] = array(
 								'id'	=> $value['id'],
